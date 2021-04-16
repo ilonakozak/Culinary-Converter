@@ -5,15 +5,85 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Bláthach - Culinary Converter</title>
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet"
-    integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
   <link rel="stylesheet" href="style.css" />
   <!-- Favicon -->
   <link rel="shortcut icon" href="images/favicon.png" />
 </head>
 
 <body>
-  
+  <section class="section-center">
+    <h1>Culinary Converter</h1>
+    <p>Enter one of the values to see the conversion rate for the rest of the data</p>
+    <!-- form -->
+    <form class="converter-form">
+      <div class="form-group">
+        <select class="custom-select mb-2 mr-sm-2 mb-sm-0 " id="select">
+          <option value="grams">g</option>
+          <option value="kgs">kg</option>
+          <option value="lbs">lbs</option>
+          <option value="oz">oz</option>
+          <option value="cups">cups</option>
+          <option value="spoons">spoons</option>
+          <option value="teaspoons">teaspoons</option>
+        </select>
+      </div>
+      <div class="form-group">
+        <input step="1" id="Input" type="number" class="form-control" placeholder="Throw me some numbers">
+      </div>
+    </form>
+    <!-- output -->
+    <div id="output">
+      <!-- card -->
+      <div class="card card-grams mb-2">
+        <div class="card-body">
+          <h3>Grams:</h3>
+          <div id="gramsOutput">0</div>
+        </div>
+      </div>
+      <!-- card -->
+      <div class="card card-kgs mb-2">
+        <div class="card-body">
+          <h3>Kilograms:</h3>
+          <div id="kgOutput">0</div>
+        </div>
+      </div>
+      <!-- card -->
+      <div class="card card-lbs mb-2">
+        <div class="card-body">
+          <h3>Pounds:</h3>
+          <div id="lbsOutput">0</div>
+        </div>
+      </div>
+      <!-- card -->
+      <div class="card card-oz mb-2">
+        <div class="card-body">
+          <h3>Ounces:</h3>
+          <div id="ozOutput">0</div>
+        </div>
+      </div>
+      <!-- card -->
+      <div class="card card-cups mb-2">
+        <div class="card-body">
+          <h3>Cups:</h3>
+          <div id="cupsOutput">0</div>
+        </div>
+      </div>
+      <!-- card -->
+      <div class="card card-spoons mb-2">
+        <div class="card-body">
+          <h3>Spoons:</h3>
+          <div id="spoonsOutput">0</div>
+        </div>
+      </div>
+      <!-- card -->
+      <div class="card card-teaspoons mb-2">
+        <div class="card-body">
+          <h3>Teaspoons:</h3>
+          <div id="teaspoonsOutput">0</div>
+        </div>
+      </div>
+    </div>
+  </section>
   <!-- javascript -->
   <script src="main.js"></script>
 </body>
