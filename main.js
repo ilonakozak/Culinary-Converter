@@ -105,6 +105,10 @@ function calcTeaspoons() {
     teaspoons.innerHTML = Number(this.value);
 }
 
+function refreshPage(){
+    window.location.reload();
+} 
+
 /* EVENT LISTENERS */
 
 input.addEventListener('input', function (e) {

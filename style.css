@@ -122,3 +122,21 @@ input:focus::-webkit-input-placeholder {
   border: 1px solid #ced4da;
   border-radius: .25rem;
 }
+
+button {
+  display: inline-block;
+    width: auto;
+    color: #fff;
+    text-transform: uppercase;
+    padding: 10px 22px;
+    border-radius: 0.25rem;
+    background-color: #73b819;
+    border: 1px solid #73b819;
+    margin-top: 15px;
+}
+
+button:hover {
+  background-color: #fff;
+  color: #73b819;
+  cursor: pointer;
+}
